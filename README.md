@@ -7,6 +7,11 @@ Geminabox is a very simple private rubygems server where you can store your priv
 
 Here is the code to start and test image at your workstation :+1:
 
+DOWNLOADING
+```
+git clone https://github.com/rahworkx/geminabox-dockerized
+```
+
 BUILDING
 ```
 docker build -t workstation:geminabox .
