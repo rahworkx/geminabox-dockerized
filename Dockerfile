@@ -11,6 +11,8 @@ RUN gem install rubygems-update
 RUN update_rubygems
 RUN gem update --system
 
+RUN wget https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/index.rubygems.org/GlobalSignRootCA.pem && mv GlobalSignRootCA.pem /usr/local/lib/site_ruby/2.3.0/rubygems/ssl_certs/GlobalSignRootCA.pem
+
 RUN mkdir -p /webapps/geminabox/config && \
     mkdir -p /webapps/geminabox/data
 
