@@ -22,9 +22,9 @@ docker run -d -p 9292:9292 --name geminabox workstation:geminabox
 ```
 
 OPTIONS
-Storring your saved gems to local DIR
+Run this to store container data locally on server. 
 ```
-docker run -d -v /path_for_stored_gems:/webapps/geminabox/data --name geminabox -p 9292:9292 -P -h geminabox
+sudo docker run -d --name geminabox -v /Path_For_Data:/webapps/geminabox/data -p 9292:9292 workstation:geminabox
 ```
 
 #### Coming Soon....
